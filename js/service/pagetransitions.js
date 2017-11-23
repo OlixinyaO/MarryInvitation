@@ -3,7 +3,7 @@ var PageTransitions = (function() {
 	var $main = $( '#pt-main' ),
 		$pages = $main.children( 'div.pt-page' ),
 		// $iterate = $( '#iterateEffects' ),
-		$iterate = $( '#test1' ),
+		$iterate = $( 'button.next-page' ),
 		animcursor = 1,
 		pagesCount = $pages.length,
 		current = 0,
@@ -37,17 +37,18 @@ var PageTransitions = (function() {
 				nextPage( el.data( 'animation' ) );
 			}
 		} );
-		console.log($iterate)
+
 		$iterate.on( 'click', function() {
 			console.log(123)
 			if( isAnimating ) {
 				return false;
 			}
-			if( animcursor > 67 ) {
-				animcursor = 1;
-			}
+			// if( animcursor > 67 ) {
+			// 	animcursor = 1;
+			// }
+			animcursor = Math.floor(Math.random()*68);
 			nextPage( animcursor );
-			++animcursor;
+			// ++animcursor;
 		} );
 
 	}
