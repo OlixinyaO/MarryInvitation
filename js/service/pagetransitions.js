@@ -3,7 +3,7 @@ var PageTransitions = (function() {
 	var $main = $( '#pt-main' ),
 		$pages = $main.children( 'div.pt-page' ),
 		// $iterate = $( '#iterateEffects' ),
-		$iterate = $( 'button.next-page' ),
+		$iterate = $( '.next-page' ),
 		animcursor = 1,
 		pagesCount = $pages.length,
 		current = 0,
@@ -381,7 +381,22 @@ var PageTransitions = (function() {
 	}
 
 	init();
+	
 
-	return { init : init };
+	return {
+		init : init,
+		nextPage : nextPage
+	};
 
 })();
+
+var animationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+
+$( '#foot' ).click(() =>{
+	PageTransitions.nextPage(30)
+}).hover(() =>{
+	$( '.gobackcover' ).addClass('animated jello')
+	.one(animationEnd, function() {
+		$( '.gobackcover' ).removeClass('animated jello')
+	})
+})

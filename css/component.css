@@ -1,5 +1,7 @@
 html, body { height: 100%; }
-
+li {
+	list-style-type:none;
+}
 .pt-perspective {
 	position: relative;
 	width: 100%;
@@ -74,11 +76,11 @@ html, body { height: 100%; }
 }
 
 .pt-page-1 {
-	background: #ff9d98;
+	background: rgb(192, 197, 232);
 }
 
 .pt-page-2 {
-	background: #f5a3a0;
+	background: rgb(192, 197, 232);
 }
 
 .pt-page-3 {
@@ -117,6 +119,7 @@ html, body { height: 100%; }
 }
 
 .pt-triggers .dl-menuwrapper button,
+/*
 .pt-touch-button {
 	border: none;
 	font-size: 13px;
@@ -139,9 +142,26 @@ html, body { height: 100%; }
 	-ms-user-select: none;
 	user-select: none;
 }
+*/
+.pt-touch-button {
+	position:absolute;
+	top:15%;
+	right:-8%;
+	transform-origin: top right;
+	transform : rotate(40deg);
+	-ms-transform : rotate(40deg);
+	-webkit-transform : rotate(40deg);
+	padding:2px;
+	text-align:left;
+	border: none;
+	box-shadow: 0 3px 0 rgba(0,0,0,0.1);
+	width:50%;
+	height:6%;
+	line-height:30px;
+}
 
 .pt-touch-button {
-	background: rgb(255, 127, 127);
+	background: rgb(38, 64, 115);
 	color: rgb(255, 213, 213);
 }
 
@@ -179,6 +199,16 @@ html, body { height: 100%; }
 	display: block;
 }
 
+#foot {
+	position:absolute;
+	bottom:5%;
+	right:5%
+}
+
+#foot .gobackcover {
+	color: rgb(255, 255, 255);
+}
+
 @media screen and (max-width: 47.4375em) {
 	.pt-page h1 {
 		font-size: 3em;
@@ -204,3 +234,19 @@ html, body { height: 100%; }
 		display: none;
 	}
 }
+
+@keyframes bounceOut {
+	20% {
+	  transform: scale3d(.9, .9, .9);
+	}
+  
+	50%, 55% {
+	  opacity: 1;
+	  transform: scale3d(1.1, 1.1, 1.1);
+	}
+  
+	to {
+	  opacity: 0;
+	  transform: scale3d(.3, .3, .3);
+	}
+  }
