@@ -74,11 +74,11 @@ html, body { height: 100%; }
 }
 
 .pt-page-1 {
-	background: #0ac2d2;
+	background: #ff9d98;
 }
 
 .pt-page-2 {
-	background: #7bb7fa;
+	background: #f5a3a0;
 }
 
 .pt-page-3 {
@@ -90,7 +90,7 @@ html, body { height: 100%; }
 }
 
 .pt-page-5 {
-	background: #fd6a62;
+	background: #ff9d98;
 }
 
 .pt-page-6 {
@@ -141,8 +141,8 @@ html, body { height: 100%; }
 }
 
 .pt-touch-button {
-	background: #fff;
-	color: #aaa;
+	background: rgb(255, 127, 127);
+	color: rgb(255, 213, 213);
 }
 
 .pt-triggers .dl-menuwrapper button {
