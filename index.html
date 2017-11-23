@@ -17,47 +17,43 @@
     <link rel="shortcut icon" href="./resource/img/favicon.ico">
     <link rel="stylesheet" href="./js/plugins/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./js/plugins/jquery-ui-1.12.1.custom/jquery-ui.css">
-
+    <link rel="stylesheet" type="text/css" href="./css/default.css" />
+    <link rel="stylesheet" type="text/css" href="./css/multilevelmenu.css" />
+    <link rel="stylesheet" type="text/css" href="./css/component.css" />
+    <link rel="stylesheet" type="text/css" href="./css/animations.css" />
 </head>
 <body>
-    <!--1.左边导航条-->
-    <nav class="side-nav" id="sidenav">
-        <!--logo-->
-        <a class="logo" href="#">
-            <!-- <img src="./resource/img/weixin_logo.jpg" alt=""> -->
-        </a>
-    </nav>
 
-    <!--4.头部面包屑显示-->
-    <header>
-    </header>
+    <!-- <div class="pt-triggers">
+        <button id="iterateEffects" class="pt-touch-button">显示下一页切换</button>
+    </div> -->
 
-    <!--主界面-->
-    <main>
-    </main>
-
+    <div id="pt-main" class="pt-perspective">
+        <div class="pt-page pt-page-1">
+                <h1><button id="test1">进入</button></h1>
+            
+        </div>
+        <div class="pt-page pt-page-2">
+            <button id="test2">test2</button>
+            <button id="test3">test3</button>
+        </div>
+        <!-- <div class="pt-page pt-page-3"><h1><span>A collection of</span>页面切换效果</h1></div>
+        <div class="pt-page pt-page-4"><h1><span>A collection of</span>页面切换效果</h1></div>
+        <div class="pt-page pt-page-5"><h1><span>A collection of</span>页面切换效果</h1></div>
+        <div class="pt-page pt-page-6"><h1><span>A collection of</span>页面切换效果</h1></div> -->
+    </div>
+    
+    <div class="pt-message">
+        <p>你的浏览器不支持 CSS 动画.</p>
+    </div>
+    
     <script src="./js/plugins/jquery/jquery-3.1.1.min.js"></script>
     <script src="./js/plugins/jquery/jquery-2.2.3.min.js"></script>
+    <script src="js/plugins/modernizr.custom.js"></script>
+    <script src="js/plugins/jquery.dlmenu.js"></script>
     <script src="./js/plugins/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
     <script src="./js/plugins/bootstrap/js/bootstrap.min.js"></script>
-    <script src="./js/plugins/echarts/echarts.js"></script>
-
-    <!-- <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/qzact/common/share/share.js"></script>
-    <script type="text/javascript">
-         setShareInfo({
-             title:          '父爱，在你看不到的地方',
-             summary:        '父爱如山，感觉不到只因身在此山中',
-             pic:            'http://qzonestyle.gtimg.cn/aoi/sola/20150617094556_OvfOpoRKRB.png',
-             url:            'http://qzs.qzone.qq.com//qzone/qzact/act/2015/father-day-m/index.html',
-             WXconfig:       {
-                 swapTitleInWX: true,
-                 appId: '',
-                 timestamp: '',
-                 nonceStr: '',
-                 signature: ''
-             }
-         });
-    </script> -->
-    <!-- <script src="./js/service/test.js"></script> -->
+    <script src="js/service/pagetransitions.js"></script>
+    <script src="js/service/test.js"></script>
 </body>
 </html>
