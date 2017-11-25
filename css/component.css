@@ -144,9 +144,9 @@ li {
 }
 */
 .pt-touch-button {
-	position:absolute;
-	top:15%;
-	right:-8%;
+	position:fixed;
+	top:100px;
+	right:-15px;
 	transform-origin: top right;
 	transform : rotate(40deg);
 	-ms-transform : rotate(40deg);
@@ -155,8 +155,8 @@ li {
 	text-align:left;
 	border: none;
 	box-shadow: 0 3px 0 rgba(0,0,0,0.1);
-	width:50%;
-	height:6%;
+	width:200px;
+	height:8%;
 	line-height:30px;
 }
 
