@@ -14,9 +14,9 @@ li {
 .pt-page {
 	height: 90%;
 	position: absolute;
-	top: 5%;
-	left: 10%;
-	right: 10%;
+	top: 2%;
+	left: 5%;
+	right: 5%;
 	visibility: hidden;
 	overflow: hidden;
 	-webkit-backface-visibility: hidden;
