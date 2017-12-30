@@ -24,6 +24,8 @@
     <link rel="stylesheet" type="text/css" href="./css/animations.css" />
 </head>
 <body>
+    <!--播放背景音乐容器-->  
+    <div id="bgmvideo"></div> 
     <div id="pt-main" class="pt-perspective">
         <div class="pt-page">
             <img src="./resource/img/first_page.jpg" style="max-width:100%;max-height:100%;overflow:hidden;" class="next-page">
@@ -49,5 +51,15 @@
     <script src="./js/plugins/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
     <script src="./js/plugins/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/service/pagetransitions.js"></script>
+    <script>
+         $(document).ready(function () {  
+            if (!sessionStorage.getItem("bgm")) {  
+                 $("#bgmvideo").append(  
+                    '<audio src="./resource/bgm/hxh.mp3" autoplay hidden></audio>'  
+                );  
+                sessionStorage.setItem("bgm", 1)  
+            }  
+        })
+    </script>
 </body>
 </html>
